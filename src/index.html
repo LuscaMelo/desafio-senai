@@ -1,0 +1,406 @@
+<!doctype html>
+<html class="scroll-smooth" lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/output.css" rel="stylesheet" />
+    <title>A Batata Frita Perfeita - Curso SENAI</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="max-w-[1920px] mx-auto">
+
+    <!-- Header -->
+    <header class="sticky lg:relative top-0 z-50 h-[80px] bg-white shadow-[0_4px_10px_rgba(0,0,0,0.07)]">
+        <div class="h-full flex items-center justify-between max-w-[1400px] mx-auto px-3">
+            <img class="w-[120px] lg:w-[150px]" src="./images/logo.png" alt="Logotipo do SENAI" />
+            <button id="menuToggle" class="lg:hidden text-2xl text-[#014466] cursor-pointer">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Navegação Desktop -->
+            <ul class="lg:flex items-center gap-5 text-lg font-semibold text-gray-700 hidden">
+                <li class="cursor-pointer hover:text-[#F37140] duration-200">Meus Cursos</li>
+                <button
+                    class="flex gap-3 items-center bg-[#014466] hover:bg-[#013652] text-white px-6 py-2 rounded-xl transition cursor-pointer">
+                    Sair
+                    <i class="fa-solid fa-right-to-bracket"></i>
+                </button>
+            </ul>
+        </div>
+
+        <!-- Menu Mobile -->
+        <div id="mobileMenu"
+            class="lg:hidden absolute top-[80px] left-0 w-full overflow-hidden max-h-0 transition-[max-height] duration-500 ease-in-out bg-[#002d44] font-semibold text-white px-6 z-40">
+            <a href="#curso" class="block py-4 hover:opacity-60">Curso</a>
+            <a href="#video" class="block py-4 hover:opacity-60">Vídeo</a>
+            <a href="#galeria" class="block py-4 hover:opacity-60">Galeria</a>
+            <a href="#exercicios" class="block py-4 pb-7 hover:opacity-60">Exercícios</a>
+        </div>
+
+    </header>
+
+    <!-- Barra de navegação Desktop -->
+    <nav class="bg-[#002d44] sticky top-0 z-50 shadow hidden lg:flex">
+        <div class="max-w-7xl mx-auto flex justify-center space-x-8 py-3 text-white font-semibold">
+            <a href="#curso" class="hover:opacity-60 duration-200">Curso</a>
+            <a href="#video" class="hover:opacity-60 duration-200">Vídeo</a>
+            <a href="#galeria" class="hover:opacity-60 duration-200">Galeria</a>
+            <a href="#exercicios" class="hover:opacity-60 duration-200">Exercícios</a>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section>
+        <img class="w-full h-[300px] lg:h-[550px] object-cover" src="./images/batata-frita-banner.jpg"
+            alt="Banner com fundo de batata fritas" />
+    </section>
+
+    <!-- Apresentação -->
+    <section id="curso" class="max-w-[1400px] mx-auto px-3 py-20">
+        <div class="flex flex-col items-center text-center">
+            <span
+                class="text-lg lg:text-xl font-bold text-white bg-[#F37140] lg:px-12 px-8 pb-1 rounded-sm">Curso</span>
+            <h1 class="text-3xl lg:text-6xl font-semibold text-gray-700 mt-2">A batata frita perfeita</h1>
+            <p class="lg:text-lg text-gray-500 mt-4 max-w-[900px]">
+                Aprenda de forma prática todos os segredos para preparar batatas fritas irresistíveis, crocantes por
+                fora e macias por dentro. Neste curso, você conhecerá as técnicas ideais de corte, escolha do tipo certo
+                de batata, temperatura do óleo, e métodos de fritura para atingir o ponto perfeito. Ideal para quem
+                deseja empreender na área de alimentação ou impressionar com receitas deliciosas em casa.
+            </p>
+        </div>
+    </section>
+
+    <!-- Slider de Passos -->
+    <section class="max-w-[1600px] mx-auto ps-4 lg:px-20 py-20 bg-[#06689D] 2xl:rounded-3xl">
+        <h2 class="text-3xl font-semibold text-white mb-6">Passo a passo</h2>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <!-- Slides -->
+                <div class="swiper-slide bg-white p-6 pb-12 rounded-md min-h-[280px]">
+                    <h3 class="text-xl font-bold text-[#014466] mb-2">1. Escolha a batata certa</h3>
+                    <p class="text-gray-800">
+                        Prefira a batata Asterix, de casca rosada, por conter menos umidade e mais amido. Isso
+                        garante mais crocância na fritura e evita que as batatas fiquem murchas após o preparo.
+                    </p>
+                </div>
+
+                <div class="swiper-slide bg-white p-6 pb-12 rounded-md min-h-[280px]">
+                    <h3 class="text-xl font-bold text-[#014466] mb-2">2. Corte em tiras uniformes</h3>
+                    <p class="text-gray-800">
+                        Utilize uma faca afiada ou um cortador apropriado para obter tiras do mesmo tamanho. Isso
+                        garante que todas fritem de forma uniforme, evitando que algumas fiquem cruas e outras
+                        queimadas.
+                    </p>
+                </div>
+
+                <div class="swiper-slide bg-white p-6 pb-12 rounded-md min-h-[280px]">
+                    <h3 class="text-xl font-bold text-[#014466] mb-2">3. Pré-cozimento</h3>
+                    <p class="text-gray-800">
+                        Após o corte, cozinhe levemente as batatas em água quente por alguns minutos até ficarem al
+                        dente. Isso ajuda a garantir que fiquem macias por dentro após a fritura. Depois, escorra e
+                        deixe esfriar.
+                    </p>
+                </div>
+
+                <div class="swiper-slide bg-white p-6 pb-12 rounded-md min-h-[280px]">
+                    <h3 class="text-xl font-bold text-[#014466] mb-2">4. Fritura dupla</h3>
+                    <p class="text-gray-800">
+                        Frite primeiro em temperatura mais baixa (cerca de 160°C) para cozinhar por dentro. Depois,
+                        aumente para 190°C e frite novamente até dourar. Esse método garante batatas macias por
+                        dentro e crocantes por fora.
+                    </p>
+                </div>
+
+                <div class="swiper-slide bg-white p-6 pb-12 rounded-md min-h-[280px]">
+                    <h3 class="text-xl font-bold text-[#014466] mb-2">5. Tempere e sirva</h3>
+                    <p class="text-gray-800">
+                        Assim que sair do óleo, tempere com sal ou outros condimentos enquanto ainda estão quentes.
+                        Sirva imediatamente para manter a textura perfeita e encantar com sabor e apresentação.
+                    </p>
+                </div>
+
+                <div class="swiper-slide bg-white p-6 pb-12 rounded-md min-h-[280px]">
+                    <h3 class="text-xl font-bold text-[#014466] mb-2">Dica bônus: páprica para realçar o sabor</h3>
+                    <p class="text-gray-800">
+                        Após fritar, experimente polvilhar um pouco de páprica doce ou defumada junto com o sal. Ela
+                        realça o sabor das batatas e dá um toque especial, tornando sua batata frita ainda mais
+                        irresistível.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Paginação -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Botões personalizados -->
+        <div class="mt-6 flex gap-2">
+            <button id="custom-prev"
+                class="custom-prev bg-[#014466] hover:bg-[#013652] p-2 rounded-lg text-white cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
+                aria-label="Slide anterior">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </button>
+            <button id="custom-next"
+                class="custom-next bg-[#014466] hover:bg-[#013652] p-2 rounded-lg text-white cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
+                aria-label="Próximo slide">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Vídeo -->
+    <section id="video" class="max-w-[1400px] mx-auto px-3 py-22 pb-0">
+        <div class="flex flex-col items-center text-center pb-10 lg:pb-8">
+            <span class="text-lg lg:text-xl font-bold text-white bg-[#F37140] lg:px-12 px-8 rounded-sm">Vídeo</span>
+            <h1 class="text-3xl lg:text-6xl font-semibold text-gray-700 mt-2">Demonstração prática</h1>
+            <p class="lg:text-lg text-gray-500 mt-4 max-w-[900px]">
+                No vídeo abaixo você irá aprender, de forma prática, tudo o que aprendeu anteriormente nesse curso.
+            </p>
+        </div>
+
+        <div class="mt-8 max-w-[1000px] mx-auto">
+            <video class="w-full rounded-lg shadow-lg" controls>
+                <source src="./videos/video-batata-frita.mp4" type="video/mp4" />
+                Seu navegador não suporta a reprodução de vídeo.
+            </video>
+        </div>
+    </section>
+
+    <!-- Galeria em Grid -->
+    <section id="galeria" class="px-3 py-10 pt-22 pb-20 max-w-[1400px] mx-auto">
+        <div class="flex flex-col items-center text-center pb-20">
+            <span
+                class="text-lg lg:text-xl font-bold text-white bg-[#F37140] lg:px-12 px-8 pb-1 rounded-sm">Galeria</span>
+            <h1 class="text-3xl lg:text-6xl font-semibold text-gray-700 mt-2">Sugestão de pratos</h1>
+            <p class="lg:text-lg text-gray-500 mt-4 max-w-[900px]">
+                Abaixo temos algumas sugestões de pratos que combinam perfeitamente com essa maravilhosa batata frita
+                que você aprendeu a fazer neste curso.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <img src="./images/1.jpg" alt="Imagem 1" data-img-src="./images/1.jpg"
+                class="rounded-xl cursor-pointer object-cover min-h-[340px] open-image-modal" />
+            <img src="./images/2.jpg" alt="Imagem 2" data-img-src="./images/2.jpg"
+                class="rounded-xl cursor-pointer object-cover min-h-[340px] open-image-modal" />
+            <img src="./images/3.png" alt="Imagem 3" data-img-src="./images/3.png"
+                class="rounded-xl cursor-pointer object-cover min-h-[340px] open-image-modal" />
+            <img src="./images/4.webp" alt="Imagem 4" data-img-src="./images/4.webp"
+                class="rounded-xl cursor-pointer object-cover min-h-[340px] open-image-modal" />
+            <img src="./images/5.jpg" alt="Imagem 5" data-img-src="./images/5.jpg"
+                class="rounded-xl cursor-pointer object-cover min-h-[340px] open-image-modal" />
+        </div>
+    </section>
+
+    <div id="imageModal"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 transition-opacity duration-300 opacity-0 pointer-events-none">
+        <div class="bg-white w-11/12 max-w-4xl mx-auto rounded-xl shadow-lg relative">
+            <!-- Botão X -->
+            <button id="closeImageModal"
+                class="absolute pb-1 top-4 right-4 bg-white rounded-full px-[9px] text-gray-500 hover:text-gray-700 text-2xl font-bold cursor-pointer">
+                &times;
+            </button>
+
+            <!-- Imagem Expandida -->
+            <img id="expandedImage" src="" alt="Imagem expandida"
+                class="w-full h-auto rounded-xl max-h-[80vh] object-contain" />
+        </div>
+    </div>
+
+    <script>
+        const imageModal = document.getElementById('imageModal');
+        const expandedImage = document.getElementById('expandedImage');
+        const closeImageModal = document.getElementById('closeImageModal');
+        const galleryImages = document.querySelectorAll('.open-image-modal');
+
+        galleryImages.forEach(img => {
+            img.addEventListener('click', () => {
+                const src = img.getAttribute('data-img-src');
+                expandedImage.src = src;
+                imageModal.classList.remove('opacity-0', 'pointer-events-none');
+                document.body.classList.add('overflow-hidden'); // desabilita scroll
+            });
+        });
+
+        function closeModal() {
+            imageModal.classList.add('opacity-0', 'pointer-events-none');
+            expandedImage.src = '';
+            document.body.classList.remove('overflow-hidden'); // reabilita scroll
+        }
+
+        closeImageModal.addEventListener('click', closeModal);
+
+        imageModal.addEventListener('click', (e) => {
+            if (e.target === imageModal) {
+                closeModal();
+            }
+        });
+    </script>
+
+
+    <section id="exercicios" class="bg-gray-50">
+        <div class="max-w-[1400px] mx-auto px-3 py-22">
+            <div class="flex flex-col items-center text-center pb-20">
+                <span
+                    class="text-lg lg:text-xl font-bold text-white bg-[#F37140] lg:px-12 px-8 pb-1 rounded-sm">Exercícios</span>
+                <h1 class="text-3xl lg:text-6xl font-semibold text-gray-700 mt-2">Agora é sua vez</h1>
+                <p class="lg:text-lg text-gray-500 mt-4 max-w-[900px]">
+                    Responda às questões abaixo e mostre que aprendeu tudo. Boa sorte!
+                </p>
+            </div>
+
+            <form id="quizForm" class="space-y-10">
+
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <!-- Questão 1 - Escolha única -->
+                    <div class="bg-white px-8 py-12">
+                        <h3 class="text-xl font-semibold text-[#014466] mb-4">
+                            1. Qual tipo de batata é mais indicado para fritura?
+                        </h3>
+                        <div class="space-y-2 text-gray-700">
+                            <label><input type="radio" name="q1" value="a" class="mr-2" /> Batata-doce</label><br />
+                            <label><input type="radio" name="q1" value="b" class="mr-2" /> Batata inglesa
+                                comum</label><br />
+                            <label><input type="radio" name="q1" value="c" class="mr-2" /> Batata
+                                Asterix</label><br />
+                            <label><input type="radio" name="q1" value="d" class="mr-2" /> Batata bolinha</label>
+                        </div>
+                        <p class="text-sm font-medium" id="feedback-q1"></p>
+                    </div>
+
+                    <!-- Questão 2 - Escolha única -->
+                    <div class="bg-white px-8 py-12">
+                        <h3 class="text-xl font-semibold text-[#014466] mb-4">
+                            2. Por que cortar batatas em tiras uniformes é importante?
+                        </h3>
+                        <div class="space-y-2 text-gray-700">
+                            <label><input type="radio" name="q2" value="a" class="mr-2" /> Para render mais
+                                porção</label><br />
+                            <label><input type="radio" name="q2" value="b" class="mr-2" /> Para fritarem de forma
+                                uniforme</label><br />
+                            <label><input type="radio" name="q2" value="c" class="mr-2" /> Apenas por
+                                estética</label><br />
+                            <label><input type="radio" name="q2" value="d" class="mr-2" /> Para absorver menos
+                                óleo</label>
+                        </div>
+                        <p class="text-sm font-medium" id="feedback-q2"></p>
+                    </div>
+
+                    <!-- Questão 3 - Verdadeiro ou Falso -->
+                    <div class="bg-white px-8 py-12">
+                        <h3 class="text-xl font-semibold text-[#014466] mb-4">
+                            3. A fritura dupla garante uma batata crocante por fora e macia por dentro.
+                        </h3>
+                        <div class="space-y-2 text-gray-700">
+                            <label><input type="radio" name="q3" value="v" class="mr-2" /> Verdadeiro</label><br />
+                            <label><input type="radio" name="q3" value="f" class="mr-2" /> Falso</label>
+                        </div>
+                        <p class="text-sm font-medium" id="feedback-q3"></p>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="button" onclick="verificarRespostas()"
+                        class="bg-[#014466] hover:bg-[#013652] text-white font-semibold px-8 py-3 rounded-xl transition cursor-pointer">
+                        Verificar Respostas
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-[#002d44] text-white pt-10 pb-6 px-4">
+        <div class="max-w-[1400px] mx-auto grid md:grid-cols-3 gap-10 text-center md:text-left">
+            <!-- Sobre -->
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Sobre o curso</h3>
+                <p class="text-gray-200 text-sm">
+                    Curso oferecido pelo SENAI para ensinar técnicas práticas e profissionais sobre como preparar a
+                    batata frita perfeita.
+                </p>
+            </div>
+
+            <!-- Links úteis -->
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Links úteis</h3>
+                <ul class="text-gray-200 text-sm space-y-2">
+                    <li><a href="#" class="hover:text-[#F37140] transition">Meus Cursos</a></li>
+                    <li><a href="#" class="hover:text-[#F37140] transition">Fale Conosco</a></li>
+                    <li><a href="#" class="hover:text-[#F37140] transition">Termos de uso</a></li>
+                    <li><a href="#" class="hover:text-[#F37140] transition">Política de privacidade</a></li>
+                </ul>
+            </div>
+
+            <!-- Redes sociais -->
+            <div>
+                <h3 class="text-xl font-semibold mb-3">Siga-nos</h3>
+                <div class="flex justify-center md:justify-start gap-4 mt-2 text-2xl">
+                    <a href="#" class="hover:text-[#F37140]" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-[#F37140]" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-[#F37140]" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-white/20 mt-10 pt-4 text-center text-sm text-gray-400">
+            &copy; 2025 SENAI. Todos os direitos reservados.
+        </div>
+    </footer>
+
+
+    <!-- Modal Overlay e Conteúdo -->
+    <div id="welcomeModal"
+        class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 transition-opacity duration-300 opacity-0 pointer-events-none">
+        <div class="bg-white w-11/12 max-w-2xl mx-auto p-6 rounded-xl shadow-lg relative">
+            <!-- Botão "X" -->
+            <button id="closeWelcomeModalX"
+                class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-2xl font-bold cursor-pointer">
+                &times;
+            </button>
+
+            <!-- Conteúdo do Modal -->
+            <img src="./images/desenho.jpg" alt="Ilustração de uma mão segurando batata fritas">
+
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">Bem-vindo ao Curso!</h2>
+            <p class="text-gray-600 mb-6">
+                Parabéns por iniciar sua jornada rumo à batata frita perfeita! Este curso irá te guiar passo a passo
+                para conquistar o sabor ideal.
+            </p>
+
+            <!-- Botão de Fechar -->
+            <button id="closeWelcomeModalButton"
+                class="bg-[#014466] hover:bg-[#013652] text-white font-semibold px-6 py-2 rounded-xl transition cursor-pointer">
+                Fechar
+            </button>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+
+</body>
+
+</html>
